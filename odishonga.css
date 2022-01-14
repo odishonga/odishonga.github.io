@@ -48,7 +48,7 @@ audio {
   margin: 25vh 25vw;
   margin-top: 12.5vh;
   width: 50%;
-  height: 25%;
+  max-height: 25%;
   display: inline-flex;
   flex-direction: row;
   justify-content: space-evenly;
