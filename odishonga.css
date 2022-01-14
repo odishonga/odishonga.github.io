@@ -1,5 +1,7 @@
 body {
   background: linear-gradient(white, skyblue) no-repeat;
+  width: 100vw;
+  height: 100vh;
 }
 
 h1 {
@@ -55,6 +57,7 @@ audio {
 .coding {
   border: 8px white solid;
   border-radius: 50%;
+  height: 40%;
   padding: 3%;
   font-size: 30px;
   text-shadow: 1px 1px snow;
