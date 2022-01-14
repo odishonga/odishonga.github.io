@@ -2,6 +2,7 @@ body {
   background: linear-gradient(white, skyblue);
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 
 h1 {
@@ -119,11 +120,34 @@ audio {
   }
 }
 
-@media only screen and (max-width: 976px) {
+@media only screen and (orientation: portrait) {
+  body {
+    overflow: hidden;
+    background: linear-gradient(white, skyblue);
+  }
+  h1 {
+    margin-top: 0;
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
   .nav-container {
     flex-direction: column;
-    width: 25%;
-    height: 50%;
-    margin-left: 40%;
+    width: 40%;
+    height: 30%;
+    margin: 18vh 30vw 0 30vw;
+  }
+  .about,
+  .writing,
+  .coding {
+  border: 8px white solid;
+  border-radius: 50%;
+  max-height: 50vh;
+  max-width: 50vw;
+  margin: 3%;
+  padding: 3%;
+  font-size: 30px;
+  text-shadow: 1px 1px snow;
+  box-shadow: 1px 1px snow;
+  letter-spacing: 1px;
   }
 }
