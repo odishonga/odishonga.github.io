@@ -148,7 +148,7 @@ audio {
   cursor: pointer;
   border: 5px var(--text) solid;
   border-radius: 25%;
-  width: 3%;
+  width: 4%;
   position: relative;
   left: 50%;
 }
