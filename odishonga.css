@@ -161,9 +161,9 @@ audio {
   }
   .nav-container {
     flex-direction: row;
-    width: 50vh;
+    width: 50vw;
     height: 50vh;
-    margin: 5vh 15% 0vh 40%;
+    /* margin: 5vh 15% 0vh 40%; */
   }
 
   .about,
