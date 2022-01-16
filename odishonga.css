@@ -192,6 +192,12 @@ audio {
     box-shadow: 1px 1px var(--text);
     letter-spacing: 1px;
   }
+
+  .about-section,
+  .coding-section {
+    font-size: 18px;
+  }
+
   .toggle-dark {
     cursor: pointer;
     border: 5px var(--text) solid;
@@ -233,6 +239,11 @@ audio {
     text-shadow: 1px 1px var(--text);
     box-shadow: 1px 1px var(--text);
     letter-spacing: 1px;
+  }
+
+  .about-section,
+  .coding-section {
+    font-size: 18px;
   }
 
   .toggle-dark {
