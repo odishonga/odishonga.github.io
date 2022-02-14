@@ -1,3 +1,47 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 :root {
   /* Light themes */
   --lightBG: linear-gradient(white, skyblue);
@@ -34,7 +78,7 @@ body {
   background: var(--bg);
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 h1 {
@@ -80,7 +124,7 @@ audio {
   margin: 25vh 25vw;
   margin-top: 12.5vh;
   width: 50%;
-  max-height: 25%;
+  height: 25%;
   display: inline-flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -92,7 +136,11 @@ audio {
   border: 8px var(--text) solid;
   border-radius: 50%;
   max-height: 40%;
-  padding: 3%;
+  padding-top: 6%;
+  padding-right: 3%;
+  padding-left: 3%;
+  padding-bottom: 0%;
+  /*padding: 3%;*/
   font-size: 30px;
   text-shadow: 1px 1px var(--text);
   box-shadow: 1px 1px var(--text);
@@ -151,6 +199,7 @@ audio {
   width: 5%;
   position: relative;
   left: 47.5%;
+  bottom: 15%;
 }
 
 @keyframes blink {
@@ -164,7 +213,7 @@ audio {
 
 @media only screen and (orientation: portrait) {
   body {
-    overflow: hidden;
+    overflow: scroll;
     background: var(--bg);
   }
   h1 {
@@ -176,17 +225,17 @@ audio {
     flex-direction: column;
     width: 40%;
     height: 30%;
-    margin: 18vh 30vw 0 30vw;
+    margin: 38% 30% 0 30%;
   }
   .about,
   .writing,
   .coding {
     border: 8px var(--text) solid;
     border-radius: 50%;
-    max-height: 50vh;
-    max-width: 50vw;
+    height: 100%;
+    width: 90%;
     margin: 3%;
-    padding: 3%;
+    padding: 30% 3% 30% 3%;
     font-size: 30px;
     text-shadow: 1px 1px var(--text);
     box-shadow: 1px 1px var(--text);
@@ -202,10 +251,12 @@ audio {
     cursor: pointer;
     border: 5px var(--text) solid;
     border-radius: 25%;
-    width: 13%;
+    width: 10%;
+    height: 3%;
     position: relative;
-    left: 42%;
-    bottom: -16%;
+    padding: 1.5%;
+    left: 45%;
+    bottom: -21%;
   }
 
 }
@@ -219,8 +270,8 @@ audio {
   }
   .nav-container {
     flex-direction: row;
-    width: 50vw;
-    height: 50vh;
+    width: 50%;
+    height: 30%;
   }
 
   .about,
@@ -231,9 +282,10 @@ audio {
     max-height: 50vh;
     width: 100%;
     margin: 5%;
-    padding: 3%;
-    padding-top: 0;
-    padding-bottom: 22%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 10%;
+    padding-bottom: 0%;
     margin-top: 0;
     font-size: 30px;
     text-shadow: 1px 1px var(--text);
@@ -253,7 +305,7 @@ audio {
     width: 7%;
     position: relative;
     left: 3.5%;
-    bottom: 95%;
+    bottom: 84%;
     background: var(--active);
   }
 }
