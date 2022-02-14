@@ -78,7 +78,6 @@ body {
   background: var(--bg);
   width: 100vw;
   height: 100vh;
-  overflow: clip;
 }
 
 h1 {
@@ -213,7 +212,6 @@ audio {
 
 @media only screen and (orientation: portrait) {
   body {
-    overflow: clip;
     background: var(--bg);
   }
   h1 {
@@ -262,9 +260,6 @@ audio {
 }
 
 @media only screen and (orientation: landscape) and (max-height: 600px) {
-  body {
-    overflow: clip;
-  }
   h1 {
     margin-top: 2%;
   }
