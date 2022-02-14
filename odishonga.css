@@ -106,6 +106,7 @@ h2 {
 li {
   list-style-type: none;
   margin: 4%;
+  padding-right: 3%;
   width: 5%;
   height: 5%;
 }
@@ -114,7 +115,7 @@ li {
   font-family: Maven Pro, sans-serif;
   color: var(--text);
   text-align: left;
-  width: 100%;
+  width: 96.8%;
   font-size: 90%;
 }
 
@@ -281,9 +282,11 @@ audio {
     letter-spacing: 1px;
   }
 
-  .about-section,
-  .coding-section {
+  .about-section, .coding-section {
     font-size: 18px;
+    padding: 10%;
+    margin: 50% 0;
+    width: 78%;
   }
 
   .toggle-dark {
@@ -296,6 +299,28 @@ audio {
     padding: 1.5%;
     left: 45%;
     bottom: -21%;
+  }
+
+  .skills {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  li {
+    padding: 6%;
+    margin: 6%
+  }
+
+  .projects {
+    padding: 0.5%;
+    margin-left: 0;
+  }
+
+  .exit {
+    margin-top: -10%;
+    margin-right: -10%;
+    text-align: center;
   }
 
 }
@@ -333,6 +358,8 @@ audio {
   .about-section,
   .coding-section {
     font-size: 18px;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   .toggle-dark {
@@ -344,5 +371,15 @@ audio {
     left: 3.5%;
     bottom: 84%;
     background: var(--active);
+  }
+
+  li {
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: center;
+  }
+
+  .exit {
+    margin-right: -9%;
   }
 }
