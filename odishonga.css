@@ -255,6 +255,7 @@ audio {
 @media only screen and (orientation: portrait) {
   body {
     background: var(--bg);
+    height: 113vh;
   }
   h1 {
     margin-top: 0;
